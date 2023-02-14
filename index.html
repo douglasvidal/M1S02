@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App LoginStart</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <h1>App LoginStart</h1>
+      </div>
+    </header>
+    <main>
+      <section id="form-section">
+        <div class="form-container">
+          <form name="form-login">
+            <div class="form-control">
+              <label for="username">Usuário: </label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Insira o seu usuário"
+              />
+            </div>
+            <div class="form-control">
+              <label for="password">Senha: </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Insira a sua senha"
+              />
+            </div>
+            <div class="form-control">
+              <button type="submit" name="authenticate" id="authenticate">
+                Logar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <section class="authenticated-section invisible">
+      <div class="authenticated-container">
+        <p>Logado</p>
+      </div>
+    </section>
+    <section class="bad-credentials-section invisible">
+      <div class="bad-credentials-container">
+        <p>Credenciais incorretas</p>
+      </div>
+    </section>
+    <script type="module" src="./js/login-start.js"></script>
+  </body>
+</html>
